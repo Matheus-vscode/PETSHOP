@@ -442,7 +442,7 @@ function createWhatsAppMessage() {
 
 // Abrir WhatsApp (botão flutuante)
 function openWhatsApp() {
-    const whatsappNumber = '5511999999999'; // Substitua pelo número real
+    const whatsappNumber = '5543984336883'; // Substitua pelo número real
     
     const message = `Olá! Gostaria de saber mais sobre os serviços do PetShop Premium. 🐾`;
     

@@ -524,6 +524,12 @@ body {
     max-width: 600px;
     position: relative;
     animation: modalSlideIn 0.3s ease;
+    /* Mobile-friendly: limit height and enable internal scroll */
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom));
 }
 
 @keyframes modalSlideIn {
@@ -557,6 +563,12 @@ body {
     gap: 1rem;
     justify-content: flex-end;
     margin-top: 2rem;
+    /* Keep actions visible on small screens */
+    position: sticky;
+    bottom: 0;
+    background: #ffffff;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
 }
 
 .btn-primary {
